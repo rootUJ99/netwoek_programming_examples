@@ -71,9 +71,10 @@ func client(){
 	
 }
 
+
 func proxyServer(){
 	fmt.Println("hello from the proxy universe")
-	listner, err := net.Listen("tcp", ":8090")
+	listner, err := net.Listen("tcp", ":8080")
 	if err != nil {
 		fmt.Println("listner error", err)
 	}
